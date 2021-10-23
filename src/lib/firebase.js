@@ -10,5 +10,6 @@ admin.initializeApp({
 export async function verifyIdTokenAndGetUserData(idToken) {
   const decodedToken = await admin.auth().verifyIdToken(idToken);
   const user = await admin.auth().getUser(decodedToken.user_id);
-  return user;
+
+  return { user, decodedToken };
 }

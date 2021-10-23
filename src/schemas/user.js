@@ -39,6 +39,6 @@ schema.index(
     unique: true,
   }
 );
-schema.index({ refreshToken: 1 });
+schema.index({ email: 1, refreshToken: 1 });
 
 export { schema };
