@@ -13,20 +13,22 @@ mv .env.sample .env
 
 ## service-account-key
 請在 secret folder 內建立 service-account-key.json 檔案
+
 為 firebase 服務帳戶的私鑰文件, Admin SDK 會需要用到
 
 ## html
 index.html #60
 
 axios.defaults.baseURL = 'https://35.221.156.56:3000'
+
 如果是 run local server, 這邊請改成 local server 的 host, localhost:3000 之類的
 
 已註銷, 目前無架設測試的 api server
-~~不確定 https://35.221.156.56:3000 在您們測試時會不會有意外
-如果 api 不能打請跟我說一聲, 我再去 gcp 的 vm 上確認一下, 不好意思~~
 
+~~不確定 https://35.221.156.56:3000 在您們測試時會不會有意外~~
 
-改完後請 firebase deploy, 至 firebase 託管
+~~如果 api 不能打請跟我說一聲, 我再去 gcp 的 vm 上確認一下, 不好意思~~  
+~~改完後請 firebase deploy, 至 firebase 託管~~
 
 ## db init
 node init_fixtures.js
@@ -36,6 +38,7 @@ node src/bin/server.js
 
 ## demo 網站
 ~~https://jerrywen.web.app/~~
+
 目前無架設測試的 api server,僅保存 firebase 的測試頁面
 
 ## 流程
